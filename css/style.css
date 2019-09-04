@@ -44,6 +44,14 @@ footer {
     margin-left: calc( (100% - 1200px) / 2 );
     background-color: red;
 }
+    .container > .left {
+
+    }
+
+    .container > .right {
+
+    }
+    
 @media (max-width: 1300px) {
     .container {
         width: 900px;
@@ -55,6 +63,7 @@ footer {
     .container {
         width: 700px;
         margin-left: calc( (100% - 700px) / 2 );
+        background-color: yellow;
     }
 }
 @media (max-width: 800px) {
@@ -71,13 +80,13 @@ footer {
 }
 @media (max-width: 600px) {
     .small-container {
-        width: 100%;
-        margin-left: 0;
+        width: calc(100% - 40px);
+        margin-left: 20px;
         background-color: lime;
     }
     .container {
-        width: 100%;
-        margin-left: 0;
+        width: calc(100% - 40px);
+        margin-left: 20px;
         background-color: pink;
     }
 }
