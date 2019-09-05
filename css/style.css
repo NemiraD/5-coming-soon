@@ -18,18 +18,24 @@ body * {
     text-align: center;
 }
     .hero img {
-
+        
     }
     .hero h1 {
         display: inline-block;
         width: 100%;
+        margin-bottom: 20px;
         font-size: 70px;
+        line-height: 80px;
         text-transform: uppercase;
 
     }
     .hero p {
         display: inline-block;
         width: 100%;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 80px;
+        color: grey;
     }
     .hero .clock {
         display: inline-block;
@@ -37,7 +43,9 @@ body * {
     }
     .hero form {
         display: inline-block;
-        width: 90%;
+        width: 100%;
+        padding: 0 5%;
+        margin-bottom: 20px;
     }
     .hero .mouse {
         display: inline-block;
@@ -47,6 +55,9 @@ body * {
     display: inline-block;
     width: 100%;
     background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* padding: 60px 0; */
     
 }
 
@@ -68,8 +79,7 @@ footer {
     margin-top: 0;
     margin-bottom: 0;*/
 
-    background-color: red;
-}
+  }
 
 .container {
     display: inline-block;
@@ -78,11 +88,18 @@ footer {
     
 }
     .container > .left {
-
+        display: inline-block;
+        width: 50%;
+        float: left;
+        background-color: green;
     }
 
     .container > .right {
-
+        display: inline-block;
+        width: 40%;
+        float: left;
+        margin-left: 10%;
+        background-color: blue;
     }
     
 @media (max-width: 1300px) {
@@ -98,6 +115,15 @@ footer {
         margin: 0 calc( (100% - 700px) / 2 );
         background-color: yellow;
     }
+    .container > .left {
+        width: 100%;
+    }
+
+    .container > .right {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 60px;
+    }
 }
 @media (max-width: 800px) {
     .small-container {
@@ -110,16 +136,17 @@ footer {
         margin: 0 calc( (100% - 500px) / 2 );
         background-color: pink;
     }
+
 }
 @media (max-width: 600px) {
     .small-container {
         width: calc(100% - 40px);
-        margin-left: 20px;
+        margin-left: 0;
         background-color: lime;
     }
     .container {
         width: calc(100% - 40px);
-        margin-left: 20px;
+        margin-left: 0;
         background-color: pink;
     }
 }
