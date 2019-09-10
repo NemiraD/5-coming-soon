@@ -1,0 +1,23 @@
+.mouse {
+    display: inline-block;
+    width: 100px;
+    height: 160px;
+    border: 10px solid#fff;
+    border-radius: 50px;
+}
+.mouse > .weel {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    margin-top: 90px;
+    border: 10px solid#fff;
+    border-radius: 50px;
+    
+    animation-name: scroll; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    
+}
