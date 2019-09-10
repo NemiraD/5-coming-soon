@@ -9,6 +9,9 @@ body * {
 
 /* normilize.css pasidaryti kad nereiktu perrasineti*/
 
+html {
+    scroll-behavior: smooth;
+}
 .hero {
     display: inline-block;
     width: 100%;
@@ -104,11 +107,23 @@ footer .fa {
     line-height: 20px;
     color: #fff;
     text-decoration: none;
+    border-radius: 50%;
 }
-    footer .fa:hover {
+    footer .fa:hover{
         background-color: #EA1E63;
         color: #FFF;
         border-radius: 50%;
+    }
+
+    footer.fa-angle-up{
+        background-color: #EA1E63;
+        color: #FFF;
+        position: absolute;
+        top: -55px;
+        right: -22px;
+        box-shadow: 0 1px 2px #0008;
+        /* border-radius: 50%; */
+
     }
     footer img {
         display: inline-block;
@@ -220,4 +235,6 @@ footer .fa {
         margin-left: 20px;
         /* background-color: pink; */
     }
-}
+    footer .fa-angle-up{
+        display: none;
+    }
