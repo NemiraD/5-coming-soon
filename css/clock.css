@@ -3,7 +3,7 @@
     width: 100%;
     color: white;
 }
-    .clock > .time{
+    .clock > .time {
         display: inline-block;
         width: 25%;
         float: left;
@@ -11,7 +11,7 @@
         line-height: 20px;
         text-transform: uppercase;
     }
-        .clock > .time > .value{
+        .clock > .time > .value {
             display: inline-block;
             width: 100%;
             font-size: 60px;
@@ -20,7 +20,7 @@
         }
 @media (max-width: 600px) {
     .clock > .time {
-        width: 100%;
+        width: 0%;
         margin-bottom: 40px;
     }
 }
