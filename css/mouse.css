@@ -6,25 +6,25 @@
     border-radius: 50px;
     text-align: center;
 }
-.mouse > .weel {
-    display: inline-block;
-    width: 10px;
-    height: 20px;
-    margin-top: 30px;
-    background-color: #fff;
-    border-radius: 5px;
+    .mouse > .wheel {
+        display: inline-block;
+        width: 10px;
+        height: 20px;
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 5px;
     
     /* background-image: url(../img/mouse.jpeg);
         background-size: cover; */
 
-    animation-name: scroll; 
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
+        animation-name: scroll; 
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
 
-    .mouse > .wheel:hover {
-        animation-play-state: paused;
-}
+        .mouse > .wheel:hover {
+            animation-play-state: paused;
+        }
 
 @keyframes scroll {
     0% {
