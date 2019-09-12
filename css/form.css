@@ -9,15 +9,17 @@ form {
         font-size: 15px;
         line-height: 25px;
         margin-bottom: 20px;
-        color: red; /*tik irasytam tekstui*/
+        /* color: red; tik irasytam tekstui */
         border: none;
         border-bottom: 1px solid #ccc;
-        /* outline: none;
-        outline-color: red;
-        animation-name: kaledos;*/
+        outline: none;
+        /*outline-color: red;
+        animation-name: kaledos;
+        nimation-duration: 2s;
+        animation-iteration-count: infinite;*/
     }
     input::placeholder {
-        color: green;
+        /* color: green; */
         font-style: italic;
     }
     form input:nth-child(2) {
@@ -26,10 +28,10 @@ form {
     form textarea {
         display: inline-block;
         width: 100%;
-        resize: vertical; /*kad nesikeistu dydis lauko, vertical - tik vertikaliai keisti dydi*/
         min-height: 100px;
         max-height: 300px;
         margin-bottom: 40px;
+        resize: vertical; /*kad nesikeistu dydis lauko, vertical - tik vertikaliai keisti dydi*/
         font-size: 15px;
         line-height: 25px;
         border: none;
@@ -37,16 +39,29 @@ form {
        
     }
     textarea::placeholder {
-        color: green;
+        /* color: green; */
         font-style: italic;
     }
-    /* @keyframes kaledos
+    @keyframes kaledos {
         0% {
             outline-color: blue;
         }
-    } */
-    @media(max-width: 600px) {
+        30% {
+            outline-color: green;
+        }
+        60% {
+            outline-color: red;
+        }
+        100% {
+            outline-color: blue;
+        }
+    }
+    
+    @media (max-width: 600px) {
         form input {
-            width: 100
+            width: 100%;
+        }
+        form input:nth-child(2) {
+            margin-left: 0;
         }
     }
